@@ -22,12 +22,30 @@
           <li><a href="delivery-payment.html">Доставка и оплата</a></li>
           <li><a href="info.html">О Компании</a></li>
         </ul>
-        <div class="search-link">
-          Поиск
-        </div>
-        <div class="login-link">
-          Вход
-        </div>
+
+        <section class="search">
+          <h2 class="visually-hidden">Поиск</h2>
+          <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+            <label class="visually-hidden">Поиск</label>
+            <input id="user-search" name="search" type="text" placeholder="Что ищем?">
+          </form>
+        </section>
+
+        <section class="modal-login">
+          <h2 class="visually-hidden">Вход в личный кабинет</h2>
+          <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+            <label class="visually-hidden">Электронная почта</label>
+            <input id="user-login" name="login" type="text" placeholder="Электронная почта">
+
+            <label class="visually-hidden">Пароль</label>
+            <input id="user-password" name="password" type="password" placeholder="Пароль">
+
+            <a class="restore" href="#">Забыли пароль!</a>
+            <a class="new-registration" href="#">Новая регистрация</a>
+            <button class="button" type="submit">Войти</button>
+          </form>
+        </section>
+
         <div class="smallcart-link">
           Корзина
         </div>
@@ -185,17 +203,6 @@
         </p>
       </div>
     </footer>
-    <section class="login">
-      <h2 class="visually-hidden">Вход в личный кабинет</h2>
-      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-
-
-        <label class="visually-hidden">Электронная почта</label>
-          <input id="user-login" name="login" type="text" placeholder="Электронная почта">
-
-
-
-
 
     <section class="feedback">
       <h2 class="visually-hidden">Форма обратной связи</h2>

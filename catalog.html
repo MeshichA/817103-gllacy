@@ -23,15 +23,54 @@
           <li><a href="delivery-payment.html">Доставка и оплата</a></li>
           <li><a href="info.html">О Компании</a></li>
         </ul>
-        <div class="search-link">
-          Поиск
-        </div>
-        <div class="login-link">
-          Вход
-        </div>
-        <div class="smallcart-link">
-          Корзина
-        </div>
+
+        <section class="search">
+          <h2 class="visually-hidden">Поиск</h2>
+          <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+            <label class="visually-hidden">Поиск</label>
+            <input id="user-search" name="search" type="text" placeholder="Что ищем?">
+          </form>
+        </section>
+
+        <section class="modal-login">
+          <h2 class="visually-hidden">Вход в личный кабинет</h2>
+          <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+            <label class="visually-hidden">Электронная почта</label>
+            <input id="user-login" name="login" type="text" placeholder="Электронная почта">
+
+            <label class="visually-hidden">Пароль</label>
+            <input id="user-password" name="password" type="password" placeholder="Пароль">
+
+            <a class="restore" href="#">Забыли пароль!</a>
+            <a class="new-registration" href="#">Новая регистрация</a>
+            <button class="button" type="submit">Войти</button>
+          </form>
+        </section>
+
+        <section class="smallcart">
+          <h2 class="visually-hidden">Корзина товаров</h2>
+          <form class="smallcart-form" action="https://echo.htmlacademy.ru" method="post">
+            <table class="smallcart-table">
+              <tr>
+                <td class="name-goods">Пломбир с апельсиновым джемом</td>
+                <td class="weight">1,5 кг х</td>
+                <td class="cost">200 руб</td>
+                <td class="total-cost">300 руб.</td>
+              </tr>
+              <tr>
+                <td class="name-goods">Клубничный пломбир с посыпкой из белого шоколада</td>
+                <td class="weight">1,5 кг х</td>
+                <td class="cost-item">300 руб</td>
+                <td class="total-cost-item">450 руб.</td>
+              </tr>
+              <tr>
+                <td colspan="4" class="total-cost-smallcart">Итого 750 руб.</td>
+              </tr>
+            </table>
+            <button class="button" type="submit">Оформить заказ</button>
+          </form>
+        </section>
+
         <p class="contact">
           с 10 до 20, ежедневно<br>
           8 812 450-25-25<br>
@@ -47,9 +86,70 @@
           <li><a class="breadcrumbs-item">Сливочное</a></li>
         </ul>
       </div>
-      <section class="filters-search">
+      <section class="filters">
         <h1>Сливочное мороженое</h1>
-          <!-- здесь будет формы для фильтров -->
+        <form class="filters-list" method="get" action="https://echo.htmlacademy.ru">
+          <p>Сортировка</p>
+          <select name="sort">
+            <option value="popular">По популярности</option>
+            <option value="inexpensive">Сначала недорогие</option>
+            <option value="expensive">Сначала дорогие</option>
+            <option value="fatness">По жирности</option>
+          </select>
+
+          <label>
+            <input type="range" name="radio">Цена 100 руб. - 500 руб.>
+          </label>
+
+          <fieldset>
+            <legend>Жирность:</legend>
+            <ul>
+              <li>
+                <input type="radio" name="fatness" value="0%" id="filter-none">
+                <label for="filter-none">0%</label>
+              </li>
+              <li>
+                <input type="radio" name="fatness" value="up-to-10%" id="filter-up-to-ten" checked>
+                <label for="filter-up-to-ten">до 10%</label>
+              </li>
+              <li>
+                <input type="radio" name="fatness" value="up-to-30%" id="filter-up-to-thirty">
+                <label for="filter-up-to-thirty">до 30%</label>
+              </li>
+              <li>
+                <input type="radio" name="fatness" value="above-30%" id="filter-above-thirty">
+                <label for="filter-above-thirty">выше 30%</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset>
+            <legend>Наполнители:</legent>
+            <ul>
+              <li>
+                <input type="checkbox" name="chocolate" id="filter-chocolate" checked>
+                <label for="filter-chocolate">Шоколадные</label>
+              </li>
+              <li>
+                <input type="checkbox" name="sugar-powder" id="filter-sugar-powder" checked>
+                <label for="filter-sugar-powder">Сахарная присыпка</label>
+              </li>
+              <li>
+                <input type="checkbox" name="fruit" id="filter-fruit">
+                <label for="filter-fruit">Фрукты</label>
+              </li>
+              <li>
+                <input type="checkbox" name="syrup" id="filter-syrup">
+                <label for="filter-syrup">Сиропы</label>
+              </li>
+              <li>
+                <input type="checkbox" name="jam" id="filter-jam">
+                <label for="filter-lam">Джемы</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="button" type="submit">Применить</button>
+        </form>
       </section>
 
       <section class="goods">
@@ -225,5 +325,19 @@
         </p>
       </div>
     </footer>
+    <section class="modal-login">
+      <h2 class="visually-hidden">Вход в личный кабинет</h2>
+      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+        <label class="visually-hidden">Электронная почта</label>
+        <input id="user-login" name="login" type="text" placeholder="Электронная почта">
+
+        <label class="visually-hidden">Пароль</label>
+        <input id="user-password" name="password" type="password" placeholder="Пароль">
+
+        <a class="restore" href="#">Забыли пароль!</a>
+        <a class="new-registration" href="#">Новая регистрация</a>
+        <button class="button" type="submit">Войти</button>
+      </form>
+    </section>
   </body>
 </html>
