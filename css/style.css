@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+
+background-color: #849d8f;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+
+  background-color: #849d8f;
+}
+
+.site-navigation,
+.catalog-list {
+list-style: none;
+}
+
+.site-navigation a,
+.catalog-list a {
+  color: #ffffff;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.catalog-list a:hover {
+  background-color: #fbded7;
+  color: #000000;
+}
+
+.catalog-list a:focus {
+  background-color: #f6b5a5;
+  color: #000000;
+}
+
+.contact {
+color: #ffffff;
+font-size: 14px;
+line-height: 16px;
+text-align:right
+
+background-color: #849d8f;
+}

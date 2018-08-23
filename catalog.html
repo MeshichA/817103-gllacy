@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -26,19 +29,23 @@
 
         <section class="search">
           <h2 class="visually-hidden">Поиск</h2>
+          <img src="img\loupe.svg" width="17" height="17" alt="Поиск">
           <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-            <label class="visually-hidden">Поиск</label>
+            <label class="visually-hidden" for="user-search">Поиск</label>
             <input id="user-search" name="search" type="text" placeholder="Что ищем?">
           </form>
         </section>
 
         <section class="modal-login">
           <h2 class="visually-hidden">Вход в личный кабинет</h2>
+          <p>Вход
+            <img src="img\entrance.svg" width="21" height="19" alt="Вход">
+          </p>
           <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-            <label class="visually-hidden">Электронная почта</label>
+            <label class="visually-hidden" for="user-login">Электронная почта</label>
             <input id="user-login" name="login" type="text" placeholder="Электронная почта">
 
-            <label class="visually-hidden">Пароль</label>
+            <label class="visually-hidden" for="user-password">Пароль</label>
             <input id="user-password" name="password" type="password" placeholder="Пароль">
 
             <a class="restore" href="#">Забыли пароль!</a>
@@ -49,6 +56,9 @@
 
         <section class="smallcart">
           <h2 class="visually-hidden">Корзина товаров</h2>
+          <p>2 товара
+            <img src="img\basket-red.svg" width="21" height="20" alt="корзина открыта">
+          </p>
           <form class="smallcart-form" action="https://echo.htmlacademy.ru" method="post">
             <table class="smallcart-table">
               <tr>
@@ -325,19 +335,5 @@
         </p>
       </div>
     </footer>
-    <section class="modal-login">
-      <h2 class="visually-hidden">Вход в личный кабинет</h2>
-      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-        <label class="visually-hidden">Электронная почта</label>
-        <input id="user-login" name="login" type="text" placeholder="Электронная почта">
-
-        <label class="visually-hidden">Пароль</label>
-        <input id="user-password" name="password" type="password" placeholder="Пароль">
-
-        <a class="restore" href="#">Забыли пароль!</a>
-        <a class="new-registration" href="#">Новая регистрация</a>
-        <button class="button" type="submit">Войти</button>
-      </form>
-    </section>
   </body>
 </html>
