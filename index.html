@@ -5,7 +5,7 @@
     <title>HTML Academy: Глейси</title>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=cyrillic" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -13,17 +13,17 @@
         <a class="main-header-logo">
           <img src="img/logo.svg" width="154" height="64" alt="Логотип Gllacy shop">
         </a>
-        <ul class="site-navigation">
-          <li>Каталог</li>
+        <ul class="site-navigation-list">
+          <li class="site-navigation-item">Каталог</li>
           <ul class="catalog-list">
-            <li><a class="catalog-item" href="#">Новинки</a></li>
+            <li><a class="catalog-item-bold" href="#">Новинки</a></li>
             <li><a class="catalog-item" href="#">Сливочное</a></li>
             <li><a class="catalog-item" href="#">Щербеты</a></li>
             <li><a class="catalog-item" href="#">Фруктовый лед</a></li>
             <li><a class="catalog-item" href="#">Мелорин</a></li>
           </ul>
-          <li><a href="delivery-payment.html">Доставка и оплата</a></li>
-          <li><a href="info.html">О Компании</a></li>
+          <li class="site-navigation-item"><a href="delivery-payment.html">Доставка и оплата</a></li>
+          <li class="site-navigation-item"><a href="info.html">О Компании</a></li>
         </ul>
 
         <section class="search">
@@ -59,16 +59,16 @@
           </p>
         </div>
 
-        <p class="contact">
-          с 10 до 20, ежедневно<br>
-          8 812 450-25-25<br>
-        </p>
+        <p class="contact-time">с 10 до 20, ежедневно</p><br>
+        <p class="contact-number">8 812 450-25-25</p><br>
+
       </nav>
     </header>
 
     <main class="container">
       <h1 class="visually-hidden">Gllacy Shop</h1>
       <div class="slides">
+        <p class="head-slide-one">Крем-брюле и пломбир с малиновым джемом</p>
         <ul class="slides-switches">
           <li class="slide-radio">
             <button class="slide-btn" type="button">первый слайд</button>
@@ -159,15 +159,15 @@
       <div class="blog-subscription">
         <article>
           <h2><a href="x">10 способов сервировки фруктовых щербетов к столу</a></h2>
-            <p class="blog"> новое в нашем блоге</p>
+            <p class="blog">Новое в нашем блоге</p>
         </article>
 
         <div class="subscription">
-          <p class="subscription">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас проиходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно=) </p>
+          <p class="subscription-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас проиходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно=) </p>
           <form class="subscription-login" action="https://echo.htmlacademy.ru" method="post">
             <label class="visually-hidden" for="e-mail-field">Электронная почта</label>
-            <input type="text" name="e-mail" id="e-mail-field" placeholder=""="Электронная почта">
-            <button class="button" type="submit">Отправить</button>
+            <input type="text" name="e-mail" id="e-mail-field" placeholder="Электронная почта">
+            <button class="button-send" type="submit">Отправить</button>
           </form>
         </div>
       </div>
@@ -193,25 +193,26 @@
       <section class="footer-social">
         <h2 class="visually-hidden">Кнопки социальных сетей</h2>
         <ul>
-          <li><a class="social-button" href="#">Твиттер</a></li>
-          <li><a class="social-button" href="#">Инстаграм</a></li>
-          <li><a class="social-button" href="#">Фэйсбук</a></li>
-          <li><a class="social-button" href="#">Вконтакте</a></li>
+          <li><a class="social-button" href="#"><img src="img\twitter.svg" width="32" height="32" alt="Твиттер"></a></li>
+          <li><a class="social-button" href="#"><img src="img\instagram.svg" width="32" height="32" alt="Инстаграм"></a></li>
+          <li><a class="social-button" href="#"><img src="img\fb.svg" width="32" height="32" alt="Фэйсбук"></a></li>
+          <li><a class="social-button" href="#"><img src="img\vk.svg" width="32" height="32" alt="Вконтакте"></a></li>
         </ul>
       </section>
+
       <section class="footer-info">
         <h2 class="visually-hidden">Общая информация</h2>
         <ul>
-          <li class="footer-info">
+          <li class="footer-info-bold">
             <a href="#">Для поставщиков</a>
           </li>
-          <li class="footer-info">
+          <li>
             <a href="#">О производстве</a>
           </li>
-          <li class="footer-info">
+          <li>
             <a href="#">Наши документы</a>
           </li>
-          <li class="footer-info">
+          <li>
             <a href="#">Экологические стандарты</a>
           </li>
         </ul>
@@ -220,7 +221,7 @@
         <img src="img\logo-htmlacademy.svg" width="108" height="39" alt="HTML Academy">
         <p class="copyright">
         Сделано в 2017
-        <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+        <a class="link-academy" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
         </p>
       </div>
     </footer>
@@ -241,7 +242,7 @@
           <label class="visually-hidden" for="feedback-comment">Комментарий</label>
           <input id="feedback-comment" type="text" name="comment" value="" placeholder="Напишите что-нибудь...">
         </p>
-        <button class="button" type="submit">Отправить</button>
+        <button class="button-feedback" type="submit">Отправить</button>
       </form>
     </section>
   </body>

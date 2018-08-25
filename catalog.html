@@ -10,21 +10,20 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo" href="index.html">
+        <a class="main-header-logo">
           <img src="img/logo.svg" width="154" height="64" alt="Логотип Gllacy shop">
         </a>
-        <ul class="site-navigation">
-          <li><a href="catalog.html">Каталог</a>
-            <ul class="catalog-list">
-              <li><a class="catalog-item" href="#">Новинки</a></li>
-              <li><a class="catalog-item" href="#">Сливочное</a></li>
-              <li><a class="catalog-item" href="#">Щербеты</a></li>
-              <li><a class="catalog-item" href="#">Фруктовый лед</a></li>
-              <li><a class="catalog-item" href="#">Мелорин</a></li>
-            </ul>
-          </li>
-          <li><a href="delivery-payment.html">Доставка и оплата</a></li>
-          <li><a href="info.html">О Компании</a></li>
+        <ul class="site-navigation-list">
+          <li class="site-navigation-item">Каталог</li>
+          <ul class="catalog-list">
+            <li><a class="catalog-item-bold" href="#">Новинки</a></li>
+            <li><a class="catalog-item" href="#">Сливочное</a></li>
+            <li><a class="catalog-item" href="#">Щербеты</a></li>
+            <li><a class="catalog-item" href="#">Фруктовый лед</a></li>
+            <li><a class="catalog-item" href="#">Мелорин</a></li>
+          </ul>
+          <li class="site-navigation-item"><a href="delivery-payment.html">Доставка и оплата</a></li>
+          <li class="site-navigation-item"><a href="info.html">О Компании</a></li>
         </ul>
 
         <section class="search">
@@ -64,8 +63,8 @@
               <tr>
                 <td class="name-goods">Пломбир с апельсиновым джемом</td>
                 <td class="weight">1,5 кг х</td>
-                <td class="cost">200 руб</td>
-                <td class="total-cost">300 руб.</td>
+                <td class="cost-item">200 руб</td>
+                <td class="total-cost-item">300 руб.</td>
               </tr>
               <tr>
                 <td class="name-goods">Клубничный пломбир с посыпкой из белого шоколада</td>
@@ -77,14 +76,12 @@
                 <td colspan="4" class="total-cost-smallcart">Итого 750 руб.</td>
               </tr>
             </table>
-            <button class="button" type="submit">Оформить заказ</button>
+            <button class="button-formalize" type="submit">Оформить заказ</button>
           </form>
         </section>
 
-        <p class="contact">
-          с 10 до 20, ежедневно<br>
-          8 812 450-25-25<br>
-        </p>
+        <p class="contact-time">с 10 до 20, ежедневно</p><br>
+        <p class="contact-number">8 812 450-25-25</p><br>
       </nav>
     </header>
 
@@ -111,54 +108,54 @@
             <input type="range" name="radio">Цена 100 руб. - 500 руб.>
           </label>
 
-          <fieldset>
+          <fieldset class="fatness">
             <legend>Жирность:</legend>
             <ul>
               <li>
                 <input type="radio" name="fatness" value="0%" id="filter-none">
-                <label for="filter-none">0%</label>
+                <label class="percent-fatness" for="filter-none">0%</label>
               </li>
               <li>
                 <input type="radio" name="fatness" value="up-to-10%" id="filter-up-to-ten" checked>
-                <label for="filter-up-to-ten">до 10%</label>
+                <label class="percent-fatness" for="filter-up-to-ten">до 10%</label>
               </li>
               <li>
                 <input type="radio" name="fatness" value="up-to-30%" id="filter-up-to-thirty">
-                <label for="filter-up-to-thirty">до 30%</label>
+                <label class="percent-fatness" for="filter-up-to-thirty">до 30%</label>
               </li>
               <li>
                 <input type="radio" name="fatness" value="above-30%" id="filter-above-thirty">
-                <label for="filter-above-thirty">выше 30%</label>
+                <label class="percent-fatness" for="filter-above-thirty">выше 30%</label>
               </li>
             </ul>
           </fieldset>
 
-          <fieldset>
+          <fieldset class="fillers">
             <legend>Наполнители:</legent>
             <ul>
               <li>
                 <input type="checkbox" name="chocolate" id="filter-chocolate" checked>
-                <label for="filter-chocolate">Шоколадные</label>
+                <label class="filler-item" for="filter-chocolate">Шоколадные</label>
               </li>
               <li>
                 <input type="checkbox" name="sugar-powder" id="filter-sugar-powder" checked>
-                <label for="filter-sugar-powder">Сахарная присыпка</label>
+                <label class="filler-item" for="filter-sugar-powder">Сахарная присыпка</label>
               </li>
               <li>
                 <input type="checkbox" name="fruit" id="filter-fruit">
-                <label for="filter-fruit">Фрукты</label>
+                <label class="filler-item" for="filter-fruit">Фрукты</label>
               </li>
               <li>
                 <input type="checkbox" name="syrup" id="filter-syrup">
-                <label for="filter-syrup">Сиропы</label>
+                <label class="filler-item" for="filter-syrup">Сиропы</label>
               </li>
               <li>
                 <input type="checkbox" name="jam" id="filter-jam">
-                <label for="filter-lam">Джемы</label>
+                <label class="filler-item" for="filter-lam">Джемы</label>
               </li>
             </ul>
           </fieldset>
-          <button class="button" type="submit">Применить</button>
+          <button class="button-apply" type="submit">Применить</button>
         </form>
       </section>
 
@@ -289,13 +286,13 @@
 
       <div class="pagination">
         <ul class="pagination-list">
-          <li><a href="#"><</a></li>
-          <li><a href="#">1</a></li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-          <li><a href="#">4</a></li>
-          <li><a href="#">5</a></li>
-          <li><a href="#">></a></li>
+          <li class="pagination-item"><a href="#"><</a></li>
+          <li class="pagination-item"><a href="#">1</a></li>
+          <li class="pagination-item"><a href="#">2</a></li>
+          <li class="pagination-item"><a href="#">3</a></li>
+          <li class="pagination-item"><a href="#">4</a></li>
+          <li class="pagination-item"><a href="#">5</a></li>
+          <li class="pagination-item"><a href="#">></a></li>
         </ul>
       </div>
     </main>
@@ -304,25 +301,25 @@
       <section class="footer-social">
         <h2 class="visually-hidden">Кнопки социальных сетей</h2>
         <ul>
-          <li><a class="social-button" href="#">Твиттер</a></li>
-          <li><a class="social-button" href="#">Инстаграм</a></li>
-          <li><a class="social-button" href="#">Фэйсбук</a></li>
-          <li><a class="social-button" href="#">Вконтакте</a></li>
+          <li><a class="social-button" href="#"><img src="img\twitter.svg" width="32" height="32" alt="Твиттер"></a></li>
+          <li><a class="social-button" href="#"><img src="img\instagram.svg" width="32" height="32" alt="Инстаграм"></a></li>
+          <li><a class="social-button" href="#"><img src="img\fb.svg" width="32" height="32" alt="Фэйсбук"></a></li>
+          <li><a class="social-button" href="#"><img src="img\vk.svg" width="32" height="32" alt="Вконтакте"></a></li>
         </ul>
       </section>
       <section class="footer-info">
         <h2 class="visually-hidden">Общая информация</h2>
         <ul>
-          <li class="footer-info">
+          <li class="footer-info-bold">
             <a href="#">Для поставщиков</a>
           </li>
-          <li class="footer-info">
+          <li>
             <a href="#">О производстве</a>
           </li>
-          <li class="footer-info">
+          <li>
             <a href="#">Наши документы</a>
           </li>
-          <li class="footer-info">
+          <li>
             <a href="#">Экологические стандарты</a>
           </li>
         </ul>
