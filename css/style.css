@@ -28,14 +28,14 @@ list-style: none;
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .site-navigation-item a {
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .catalog-item {
@@ -49,7 +49,7 @@ list-style: none;
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 /*.catalog-list {
@@ -89,22 +89,33 @@ list-style: none;
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;
-  font-weight: normal;
+  font-weight: 500;
 
   background-color: #9db1a5;
   width: 93px;
   height: 32px;
 }
 
-.smartlink {
+.smallcart p {
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;
-  font-weight: normal;
+  font-weight: 500;
 
   background-color: #9db1a5;
   width: 100px;
   height: 33px;
+}
+
+.smallcart-link p {
+  font-size: 14px;
+  line-height: 16px;
+  color: #323232;
+  font-weight: 500;
+
+  background-color: rgb(248, 247, 244);
+  width: 117px;
+  height: 32px;
 }
 
 .contact-time {
@@ -112,7 +123,7 @@ color: #ffffff;
 font-size: 14px;
 line-height: 16px;
 text-align:right;
-font-weight: bold;
+font-weight: 700;
 }
 
 .contact-number {
@@ -120,25 +131,25 @@ color: #ffffff;
 font-size: 22px;
 line-height: 24px;
 text-align:right;
-font-weight: bold;
+font-weight: 700;
 }
 
 .head-slide-one {
   font-size: 60px;
-  line-height: 60,35px;
-  font-weight: bold;
+  line-height: 60px;
+  font-weight: 700;
   color: #ffffff;
 }
 
 .slide-radio {
   list-style: none;
 }
+
 .slides a {
   font-size: 32px;
   line-height: 44px;
-  font-weight: bold;
+  font-weight: 700;
   color: #ffffff;
-  font-weight: bold;
   text-align: center;
   text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
   text-decoration: none;
@@ -153,7 +164,7 @@ font-weight: bold;
 .slides a:focus {
   font-size: 32px;
   line-height: 44px;
-  font-weight: bold;
+  font-weight: 700;
   text-align: center;
   text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
   text-decoration: none;
@@ -167,7 +178,7 @@ font-weight: bold;
 .slides a:active {
   font-size: 32px;
   line-height: 44px;
-  font-weight: bold;
+  font-weight: 700;
   text-align: center;
   text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
   text-decoration: none;
@@ -180,7 +191,6 @@ font-weight: bold;
 
 .promo-raspberry {
   background-image: url("img/fon-strawberrypng.png");
-  background-position: left;
   width: 560px;
   height: 229px;
 }
@@ -195,7 +205,7 @@ font-weight: bold;
 .promo-chocolate a {
   font-size: 18px;
   line-height: 24px;
-  font-weight: bold;
+  font-weight: 700;
   color: #ffffff;
   text-decoration: none;
 
@@ -211,7 +221,7 @@ font-weight: bold;
 .promo-chocolate a:focus {
   font-size: 18px;
   line-height: 24px;
-  font-weight: bold;
+  font-weight: 700;
   color: #ffffff;
   text-decoration: none;
 
@@ -225,7 +235,7 @@ font-weight: bold;
 .promo-chocolate a:active {
   font-size: 18px;
   line-height: 24px;
-  font-weight: bold;
+  font-weight: 700;
   color: #ffffff;
   text-decoration: none;
 
@@ -238,13 +248,13 @@ font-weight: bold;
 .promo-header {
   font-size: 35px;
   line-height: 41px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .promo-main {
   font-size: 18px;
   line-height: 22px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .popular-goods-list,
@@ -255,17 +265,19 @@ list-style: none;
 .good-title {
     font-size: 16px;
     line-height: 22px;
+    font-weight: 500;
   }
 
 .cost {
   font-size: 45px;
   line-height: 45px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
-.weight {
-  font-size: 35px;
+.mass {
+  font-size: 30px;
   line-height: 45px;
+  font-weight: 700;
 }
 
 .good-link {
@@ -280,7 +292,7 @@ list-style: none;
 .about-us-title {
   font-size: 24px;
   line-height: 30px;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .about-us-item {
@@ -292,7 +304,7 @@ list-style: none;
 .blog-subscription a {
   font-size: 24px;
   line-height: 30px;
-  font-weight: bold;
+  font-weight: 700;
   color: #323232;
   text-decoration: underline;
 
@@ -314,7 +326,7 @@ list-style: none;
 .button-send {
   font-size: 18px;
   line-height: 24px;
-  font-weight: bold;
+  font-weight: 700;
   color: #fefefe;
 
   background-image: linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
@@ -326,7 +338,7 @@ list-style: none;
 .contacts a {
   font-size: 18px;
   line-height: 24px;
-  font-weight: bold;
+  font-weight: 700;
   color: #fefefe;
 
   background-image: linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
@@ -339,27 +351,28 @@ list-style: none;
   font-size: 14px;
   line-height: 20px;
   color: #323232;
+  font-weight: 400;
 }
 
 .big-contacts {
   font-size: 18px;
   line-height: 24px;
   color: #323232;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .contact a {
   font-size: 18px;
   line-height: 24px;
   color: #fefefe;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .footer-social ul {
   list-style: none;
-}
 
 }
+
 .footer-info ul {
   list-style: none;
 }
@@ -369,17 +382,18 @@ list-style: none;
   line-height: 18px;
   color: #ffffff;
   text-decoration: underline;
+  font-weight: 400;
 }
 
 .link-academy {
   text-decoration: underline;
 }
 
-.footer-info-bold {
+.footer-info-bold a {
   font-size: 13px;
   line-height: 18px;
   color: #ffffff;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 
@@ -387,25 +401,28 @@ list-style: none;
   font-size: 12px;
   line-height: 18px;
   color: #ffffff;
+  font-weight: 400;
 }
 
 .copyright a {
   font-size: 12px;
   line-height: 18px;
   color: #ffffff;
+  font-weight: 400;
 }
 
 .feedback-info {
   font-size: 24px;
   line-height: 28px;
   color: #323232;
+  font-weight: 500;
 }
 
 .button-feedback {
   font-size: 18px;
   line-height: 24px;
   color: #ffffff;
-  font-weight: bold;
+  font-weight: 700;
 
   background-image: linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
   box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
@@ -425,6 +442,7 @@ list-style: none;
   font-size: 13px;
   line-height: 24px;
   color: #323232;
+  font-weight: 400;
   text-decoration: underline;
 }
 
@@ -432,6 +450,7 @@ list-style: none;
   font-size: 13px;
   line-height: 24px;
   color: #323232;
+  font-weight: 400;
   text-decoration: underline;
 }
 
@@ -439,12 +458,12 @@ list-style: none;
   font-size: 18px;
   line-height: 24px;
   color: #ffffff;
-  font-weight: bold;
+  font-weight: 700;
 
-  background-image: linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  /*background-image: linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
   box-shadow: 0px 1px 2px 0px rgba(172, 16, 0, 0.004);
   width: 100px;
-  height: 44px;
+  height: 44px;*/
 
 }
 
@@ -457,38 +476,42 @@ list-style: none;
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .filters h1 {
   font-size: 35px;
   line-height: 41px;
   color: #ffffff;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .fatness legend {
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;
+  font-weight: 500;
 }
 
 .percent-fatness {
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
+  font-weight: 500;
 }
 
 .fillers legend {
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;
+  font-weight: 500;
 }
 
 .filler-item {
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
+  font-weight: 500;
 }
 
 .fillers ul,
@@ -502,6 +525,7 @@ list-style: none;
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
+  font-weight: 500;
 
   border-style: solid;
   border-width: 2px;
@@ -559,17 +583,17 @@ list-style: none;
   font-size: 15px;
   line-height: 18px;
   color: #323232;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .button-formalize {
   font-size: 18px;
   line-height: 24px;
   color: #ffffff;
-  font-weight: bold;
+  font-weight: 700;
 
-  background-image: linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  /*background-image: linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
   box-shadow: 0px 1px 2px 0px rgba(172, 16, 0, 0.004);
   width: 170px;
-  height: 44px;
+  height: 44px;*/
 }
