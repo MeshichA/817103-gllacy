@@ -3,99 +3,103 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=cyrillic" rel="stylesheet">
   </head>
   <body>
-    <header class="main-header">
+    <header class="main-header-catalog">
       <nav class="main-navigation">
-        <a class="main-header-logo" href="index.html">
-          <img src="img/logo.svg" width="154" height="64" alt="Логотип Gllacy shop">
-        </a>
-        <ul class="site-navigation-list">
-          <li class="site-navigation-item">Каталог</li>
-          <ul class="catalog-list">
-            <li><a class="catalog-item-bold" href="#">Новинки</a></li>
-            <li><a class="catalog-item" href="#">Сливочное</a></li>
-            <li><a class="catalog-item" href="#">Щербеты</a></li>
-            <li><a class="catalog-item" href="#">Фруктовый лед</a></li>
-            <li><a class="catalog-item" href="#">Мелорин</a></li>
+        <div class="main-navigation-wrapper">
+          <a class="main-header-logo">
+            <img src="img/logo.svg" width="154" height="64" alt="Логотип Gllacy shop">
+          </a>
+          <ul class="site-navigation-list">
+            <li class="site-navigation-item">Каталог
+              <ul class="catalog-list">
+                <li><a class="catalog-item-bold" href="#">Новинки</a></li>
+                <li><a class="catalog-item" href="#">Сливочное</a></li>
+                <li><a class="catalog-item" href="#">Щербеты</a></li>
+                <li><a class="catalog-item" href="#">Фруктовый лед</a></li>
+                <li><a class="catalog-item" href="#">Мелорин</a></li>
+              </ul>
+            </li>
+            <li class="site-navigation-item"><a href="delivery-payment.html">Доставка и оплата</a></li>
+            <li class="site-navigation-item"><a href="info.html">О Компании</a></li>
           </ul>
-          <li class="site-navigation-item"><a href="delivery-payment.html">Доставка и оплата</a></li>
-          <li class="site-navigation-item"><a href="info.html">О Компании</a></li>
-        </ul>
+        </div>
 
-        <section class="search">
-          <h2 class="visually-hidden">Поиск</h2>
-          <img src="img/loupe.svg" width="17" height="17" alt="Поиск">
-          <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-            <label class="visually-hidden" for="user-search">Поиск</label>
-            <input id="user-search" name="search" type="text" placeholder="Что ищем?">
-          </form>
-        </section>
+        <div class="user-navigation-wrapper">
+            <section class="search">
+              <h2 class="visually-hidden">Поиск</h2>
+              <img src="img/loupe.svg" width="17" height="17" alt="Поиск">
+              <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+                <label class="visually-hidden" for="user-search">Поиск</label>
+                <input id="user-search" name="search" type="text" placeholder="Что ищем?">
+              </form>
+            </section>
 
-        <section class="modal-login">
-          <h2 class="visually-hidden">Вход в личный кабинет</h2>
-          <p>Вход
-            <img src="img/entrance.svg" width="21" height="19" alt="Вход">
-          </p>
-          <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-            <label class="visually-hidden" for="user-login">Электронная почта</label>
-            <input id="user-login" name="login" type="text" placeholder="Электронная почта">
+            <section class="modal-login">
+              <h2 class="visually-hidden">Вход в личный кабинет</h2>
+              <p>Вход
+                <img src="img/entrance.svg" width="21" height="19" alt="Вход">
+              </p>
+              <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+                <label class="visually-hidden" for="user-login">Электронная почта</label>
+                <input id="user-login" name="login" type="text" placeholder="Электронная почта">
 
-            <label class="visually-hidden" for="user-password">Пароль</label>
-            <input id="user-password" name="password" type="password" placeholder="Пароль">
+                <label class="visually-hidden" for="user-password">Пароль</label>
+                <input id="user-password" name="password" type="password" placeholder="Пароль">
 
-            <a class="restore" href="#">Забыли пароль!</a>
-            <a class="new-registration" href="#">Новая регистрация</a>
-            <button class="button" type="submit">Войти</button>
-          </form>
-        </section>
+                <a class="restore" href="#">Забыли пароль!</a>
+                <a class="new-registration" href="#">Новая регистрация</a>
+                <button class="button" type="submit">Войти</button>
+              </form>
+            </section>
 
-        <section class="smallcart-link">
-          <h2 class="visually-hidden">Корзина товаров</h2>
-          <p>2 товара
-            <img src="img/basket-red.svg" width="21" height="20" alt="корзина открыта">
-          </p>
-          <form class="smallcart-form" action="https://echo.htmlacademy.ru" method="post">
-            <table class="smallcart-table">
-              <tr>
-                <td class="name-goods">Пломбир с апельсиновым джемом</td>
-                <td class="weight">1,5 кг х</td>
-                <td class="cost-item">200 руб</td>
-                <td class="total-cost-item">300 руб.</td>
-              </tr>
-              <tr>
-                <td class="name-goods">Клубничный пломбир с посыпкой из белого шоколада</td>
-                <td class="weight">1,5 кг х</td>
-                <td class="cost-item">300 руб</td>
-                <td class="total-cost-item">450 руб.</td>
-              </tr>
-              <tr>
-                <td colspan="4" class="total-cost-smallcart">Итого 750 руб.</td>
-              </tr>
-            </table>
-            <button class="button-formalize" type="submit">Оформить заказ</button>
-          </form>
-        </section>
+            <section class="smallcart-link">
+              <h2 class="visually-hidden">Корзина товаров</h2>
+              <p>2 товара
+                <img src="img/basket-red.svg" width="21" height="20" alt="корзина открыта">
+              </p>
+              <form class="smallcart-form" action="https://echo.htmlacademy.ru" method="post">
+                <table class="smallcart-table">
+                  <tr>
+                    <td class="name-goods">Пломбир с апельсиновым джемом</td>
+                    <td class="weight">1,5 кг х</td>
+                    <td class="cost-item">200 руб</td>
+                    <td class="total-cost-item">300 руб.</td>
+                  </tr>
+                  <tr>
+                    <td class="name-goods">Клубничный пломбир с посыпкой из белого шоколада</td>
+                    <td class="weight">1,5 кг х</td>
+                    <td class="cost-item">300 руб</td>
+                    <td class="total-cost-item">450 руб.</td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" class="total-cost-smallcart">Итого 750 руб.</td>
+                  </tr>
+                </table>
+                <button class="button-formalize" type="submit">Оформить заказ</button>
+              </form>
+            </section>
 
-        <p class="contact-time">с 10 до 20, ежедневно</p><br>
-        <p class="contact-number">8 812 450-25-25</p><br>
+            <p class="contact-time">с 10 до 20, ежедневно</p><br>
+            <p class="contact-number">8 812 450-25-25</p><br>
+          </div>
+        </div>
       </nav>
     </header>
 
     <main class="container">
-      <div class="breadcrumbs">
-        <ul class="breadcrumbs-list">
-          <li><a class="breadcrumbs-item" href="index.html">Главная</a></li>
-          <li><a class="breadcrumbs-item" href="catalog.html">Каталог</a></li>
-          <li><a class="breadcrumbs-item">Сливочное</a></li>
-        </ul>
-      </div>
+      <ul class="breadcrumbs-list">
+        <li><a class="breadcrumbs-item" href="index.html">Главная</a></li>
+        <li><a class="breadcrumbs-item" href="catalog.html">Каталог</a></li>
+        <li><a class="breadcrumbs-item">Сливочное</a></li>
+      </ul>
       <section class="filters">
         <h1>Сливочное мороженое</h1>
-          <div class="filter-list-wrapper">
+
           <form class="filters-list" method="get" action="https://echo.htmlacademy.ru">
             <p>Сортировка</p>
             <select name="sort">
@@ -111,19 +115,19 @@
 
             <fieldset class="fatness">
               <legend>Жирность:</legend>
-              <ul>
-                <li>
+              <ul class="fatness-radio-list">
+                <li class="fatness-radio-item">
                   <input type="radio" name="fatness" value="0%" id="filter-none">
                   <label class="percent-fatness" for="filter-none">0%</label>
                 </li>
-                <li>
+                <li class="fatness-radio-item">
                   <input type="radio" name="fatness" value="up-to-10%" id="filter-up-to-ten" checked>
                   <label class="percent-fatness" for="filter-up-to-ten">до 10%</label>
-                </li>
+                </li class="fatness-radio-item">
                 <li>
                   <input type="radio" name="fatness" value="up-to-30%" id="filter-up-to-thirty">
                   <label class="percent-fatness" for="filter-up-to-thirty">до 30%</label>
-                </li>
+                </li class="fatness-radio-item">
                 <li>
                   <input type="radio" name="fatness" value="above-30%" id="filter-above-thirty">
                   <label class="percent-fatness" for="filter-above-thirty">выше 30%</label>
@@ -133,24 +137,24 @@
 
             <fieldset class="fillers">
               <legend>Наполнители:</legend>
-              <ul>
-                <li>
+              <ul class="fillers-checkbox-list">
+                <li class="fillers-checkbox-item">
                   <input type="checkbox" name="chocolate" id="filter-chocolate" checked>
                   <label class="filler-item" for="filter-chocolate">Шоколадные</label>
                 </li>
-                <li>
+                <li class="fillers-checkbox-item">
                   <input type="checkbox" name="sugar-powder" id="filter-sugar-powder" checked>
                   <label class="filler-item" for="filter-sugar-powder">Сахарная присыпка</label>
                 </li>
-                <li>
+                <li class="fillers-checkbox-item">
                   <input type="checkbox" name="fruit" id="filter-fruit">
                   <label class="filler-item" for="filter-fruit">Фрукты</label>
                 </li>
-                <li>
+                <li class="fillers-checkbox-item">
                   <input type="checkbox" name="syrup" id="filter-syrup">
                   <label class="filler-item" for="filter-syrup">Сиропы</label>
                 </li>
-                <li>
+                <li class="fillers-checkbox-item">
                   <input type="checkbox" name="jam" id="filter-jam">
                   <label class="filler-item" for="filter-jam">Джемы</label>
                 </li>
@@ -158,7 +162,7 @@
             </fieldset>
             <button class="button-apply" type="submit">Применить</button>
           </form>
-        </div>
+
       </section>
 
       <section class="goods">
@@ -294,45 +298,56 @@
           <li class="pagination-item"><a href="#">3</a></li>
           <li class="pagination-item"><a href="#">4</a></li>
           <li class="pagination-item"><a href="#">5</a></li>
-          <li class="pagination-item"><a href="#">></a></li>
+          <li class="pagination-item"><a href="#"> > </a></li>
         </ul>
       </div>
     </main>
 
     <footer class="main-footer">
-      <section class="footer-social">
-        <h2 class="visually-hidden">Кнопки социальных сетей</h2>
-        <ul>
-          <li><a class="social-button" href="#"><img src="img/twitter.svg" width="32" height="32" alt="Твиттер"></a></li>
-          <li><a class="social-button" href="#"><img src="img/instagram.svg" width="32" height="32" alt="Инстаграм"></a></li>
-          <li><a class="social-button" href="#"><img src="img/fb.svg" width="32" height="32" alt="Фэйсбук"></a></li>
-          <li><a class="social-button" href="#"><img src="img/vk.svg" width="32" height="32" alt="Вконтакте"></a></li>
-        </ul>
-      </section>
-      <section class="footer-info">
-        <h2 class="visually-hidden">Общая информация</h2>
-        <ul>
-          <li class="footer-info-bold">
-            <a href="#">Для поставщиков</a>
-          </li>
-          <li>
-            <a href="#">О производстве</a>
-          </li>
-          <li>
-            <a href="#">Наши документы</a>
-          </li>
-          <li>
-            <a href="#">Экологические стандарты</a>
-          </li>
-        </ul>
-      </section>
-      <div class="footer-copyright">
-        <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="HTML Academy">
-        <p class="copyright">
+      <div class="container"
+        <section class="footer-social">
+          <h2 class="visually-hidden">Кнопки социальных сетей</h2>
+          <ul class="social-button-list">
+            <li class="social-button-item">
+              <a class="social-button-link" href="#"><img src="img/twitter.svg" width="32" height="32" alt="Твиттер"></a>
+            </li>
+            <li class="social-button-item">
+              <a class="social-button-link" href="#"><img src="img/instagram.svg" width="32" height="32" alt="Инстаграм"></a>
+            </li>
+            <li class="social-button-item">
+              <a class="social-button-link" href="#"><img src="img/fb.svg" width="32" height="32" alt="Фэйсбук"></a>
+            </li>
+            <li class="social-button-item">
+              <a class="social-button-link" href="#"><img src="img/vk.svg" width="32" height="32" alt="Вконтакте"></a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="footer-info">
+          <h2 class="visually-hidden">Общая информация</h2>
+          <ul class="footer-info-list">
+            <li class="footer-info-item-bold">
+              <a href="#">Для поставщиков</a>
+            </li>
+            <li class="footer-info-item">
+              <a href="#">О производстве</a>
+            </li>
+            <li class="footer-info-item">
+              <a href="#">Наши документы</a>
+            </li>
+            <li class="footer-info-item">
+              <a href="#">Экологические стандарты</a>
+            </li>
+          </ul>
+        </section>
+        <div class="footer-copyright">
+          <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="HTML Academy">
+          <p class="copyright">
           Сделано
-          <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+          <a class="link-academy" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
           в 2017
-        </p>
+          </p>
+        </div>
       </div>
     </footer>
   </body>
