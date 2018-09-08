@@ -15,7 +15,7 @@
       <nav class="main-navigation">
         <ul class="site-navigation-list">
           <li class="site-navigation-item active-catalog"><a href="catalog.html">Каталог</a>
-            <ul class="catalog-list">
+            <ul class="catalog-list catalog-list-none">
               <li><a class="catalog-item-bold" href="catalog.html">Новинки</a></li>
               <li><a class="catalog-item" href="catalog.html">Сливочное</a></li>
               <li><a class="catalog-item" href="catalog.html">Щербеты</a></li>
@@ -31,51 +31,55 @@
           <section class="search">
             <h2 class="visually-hidden">Поиск</h2>
             <a class="search-link" href="search.html"></a>
-            <!-- <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+            <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
               <label class="visually-hidden" for="user-search">Поиск</label>
-              <input id="user-search" name="search" type="text" placeholder="Что ищем?">
-            </form>-->
+              <input id="user-search" name="search" type="text" placeholder="    Что ищем?">
+            </form>
           </section>
 
           <section class="modal-login">
             <h2 class="visually-hidden">Вход в личный кабинет</h2>
             <a class="login-link" href="login.html">Вход</a>
-            <!-- <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+            <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
               <label class="visually-hidden" for="user-login">Электронная почта</label>
-              <input id="user-login" name="login" type="text" placeholder="Электронная почта">
+              <input id="user-login" name="login" type="text" placeholder="    Электронная почта">
 
               <label class="visually-hidden" for="user-password">Пароль</label>
-              <input id="user-password" name="password" type="password" placeholder="Пароль">
+              <input id="user-password" name="password" type="password" placeholder="    Пароль">
 
               <a class="restore" href="#">Забыли пароль!</a>
               <a class="new-registration" href="#">Новая регистрация</a>
-              <button class="button" type="submit">Войти</button>
-            </form> -->
+              <button class="button open-button" type="submit">Войти</button>
+            </form>
           </section>
 
           <section class="smallcart-full">
             <h2 class="visually-hidden">Корзина товаров</h2>
             <a class="smallcart-full-link" href="smallcart.html">2 товара</a>
-            <!-- <form class="smallcart-form" action="https://echo.htmlacademy.ru" method="post">
+            <form class="smallcart-form" action="https://echo.htmlacademy.ru" method="post">
               <table class="smallcart-table">
                 <tr>
-                  <td class="name-goods">Пломбир с апельсиновым джемом</td>
-                  <td class="weight">1,5 кг х</td>
-                  <td class="cost-item">200 руб</td>
+                  <td class="cancel"><a href="#"><img src="img/cross-small.svg" width="11px" height="11px" alt="Удалить"></a></td>
+                  <td class="small-image"><img src="img/small-ice-cream-1.jpg" width="33px" height="33px" alt="Удалить"></td>
+                  <td class="name-goods icon-orange-jam">Пломбир с апельсиновым джемом</td>
+                  <td class="weight">1,5 кг х <span class="cost-item-color">200 руб</span></td>
                   <td class="total-cost-item">300 руб.</td>
                 </tr>
                 <tr>
-                  <td class="name-goods">Клубничный пломбир с посыпкой из белого шоколада</td>
-                  <td class="weight">1,5 кг х</td>
-                  <td class="cost-item">300 руб</td>
+                  <td class="cancel"><a href="#"><img src="img/cross-small.svg" width="11px" height="11px" alt="Удалить"></a></td>
+                  <td class="small-image"><img src="img/small-ice-cream-2.jpg" width="33px" height="33px" alt="Удалить"></td>
+                  <td class="name-goods icon-strawberry-ice-cream">Клубничный пломбир с посыпкой из белого шоколада</td>
+                  <td class="weight">1,5 кг х <span class="cost-item-color">300 руб</span></td>
                   <td class="total-cost-item">450 руб.</td>
                 </tr>
                 <tr>
-                  <td colspan="4" class="total-cost-smallcart">Итого 750 руб.</td>
+                  <td colspan="6" class="total-cost-smallcart"><span class="total-cost-smallcart-style">Итого: 750 руб.</span></td>
                 </tr>
               </table>
-              <button class="button-formalize" type="submit">Оформить заказ</button>
-            </form> -->
+              <div class="wrapper-button">
+                <button class="button formalize-button" type="submit">Оформить заказ</button>
+              </div>
+            </form>
           </section>
         </div>
       </nav>
@@ -172,6 +176,7 @@
                 <p class="cost">310₽<span class="mass">/кг</span></p>
                 <h3 class="good-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
               </a>
+              <a class="button fast-view-button" href="#">Быстрый просмотр</a>
             </section>
           </li>
 
@@ -182,6 +187,7 @@
                 <p class="cost">380₽<span class="mass">/кг</span></p>
                 <h3 class="good-title">Сливочно-кофейное с кусочками шоколада</h3>
               </a>
+              <a class="button fast-view-button" href="#">Быстрый просмотр</a>
             </section>
           </li>
 
@@ -192,6 +198,7 @@
                 <p class="cost">355₽<span class="mass">/кг</span></p>
                 <h3 class="good-title">Сливочно-клубничное с присыпкой из белого шоколада</h3>
               </a>
+              <a class="button fast-view-button" href="#">Быстрый просмотр</a>
             </section>
           </li>
 
@@ -202,6 +209,7 @@
                 <p class="cost">415₽<span class="mass">/кг</span></p>
                 <h3 class="good-title">Сливочное крем-брюле с карамельной подливкой</h3>
               </a>
+              <a class="button fast-view-button" href="#">Быстрый просмотр</a>
             </section>
           </li>
 
@@ -212,16 +220,18 @@
                 <p class="cost">325₽<span class="mass">/кг</span></p>
                 <h3 class="good-title">Сливочное с брусничным джемом</h3>
               </a>
+              <a class="button fast-view-button" href="#">Быстрый просмотр</a>
             </section>
           </li>
 
           <li class="goods-item">
             <section class="good">
               <a class="good-link" href="#">
-                <img class="good-image" src="img/creamy-strawberry.jpg" width="267" height="267" alt="Сливочно-черничное с цельными ягодами черники">
-                <p class="cost">325₽<span class="mass">/кг</span></p>
+                <img class="good-image" src="img/creamy-with-blueberries.jpg" width="267" height="267" alt="Сливочно-черничное с цельными ягодами черники">
+                <p class="cost">410₽<span class="mass">/кг</span></p>
                 <h3 class="good-title">Сливочно-черничное с цельными ягодами черники</h3>
               </a>
+              <a class="button fast-view-button" href="#">Быстрый просмотр</a>
             </section>
           </li>
 
@@ -229,9 +239,10 @@
             <section class="good">
               <a class="good-link" href="#">
                 <img class="good-image" src="img/creamy-lemon.jpg" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой">
-                <p class="cost">325₽<span class="mass">/кг</span></p>
+                <p class="cost">375₽<span class="mass">/кг</span></p>
                 <h3 class="good-title">Сливочно-лимонное с карамельной присыпкой</h3>
               </a>
+              <a class="button fast-view-button" href="#">Быстрый просмотр</a>
             </section>
           </li>
 
@@ -239,9 +250,10 @@
             <section class="good">
               <a class="good-link" href="#">
                 <img class="good-image" src="img/cream-with-chocolate-chips.jpg" width="267" height="267" alt="Сливочное с шоколадной стружкой">
-                <p class="cost">325₽<span class="mass">/кг</span></p>
+                <p class="cost">320₽<span class="mass">/кг</span></p>
                 <h3 class="good-title">Сливочное с шоколадной стружкой</h3>
               </a>
+              <a class="button fast-view-button" href="#">Быстрый просмотр</a>
             </section>
           </li>
 
@@ -249,9 +261,10 @@
             <section class="good">
               <a class="good-link" href="#">
                 <img class="good-image" src="img/creamy-vanilla.jpg" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада">
-                <p class="cost">325₽<span class="mass">/кг</span></p>
+                <p class="cost">440₽<span class="mass">/кг</span></p>
                 <h3 class="good-title">Сливочно-ванильное с кусочками шоколада</h3>
               </a>
+              <a class="button fast-view-button" href="#">Быстрый просмотр</a>
             </section>
           </li>
 
@@ -259,9 +272,10 @@
             <section class="good">
               <a class="good-link" href="#">
                 <img class="good-image" src="img/creamy-with-menthol.jpg" width="267" height="267" alt="Сливочное с ментоловым сиропом">
-                <p class="cost">325₽<span class="mass">/кг</span></p>
+                <p class="cost">435₽<span class="mass">/кг</span></p>
                 <h3 class="good-title">Сливочное с ментоловым сиропом</h3>
               </a>
+              <a class="button fast-view-button" href="#">Быстрый просмотр</a>
             </section>
           </li>
 
@@ -269,9 +283,10 @@
             <section class="good">
               <a class="good-link" href="#">
                 <img class="good-image" src="img/creamy-with-pieces-of-dark-chocolate.jpg" width="267" height="267" alt="Сливочное с кусочками черного шоколада">
-                <p class="cost">325₽<span class="mass">/кг</span></p>
+                <p class="cost">355₽<span class="mass">/кг</span></p>
                 <h3 class="good-title">Сливочное с кусочками черного шоколада</h3>
               </a>
+              <a class="button fast-view-button" href="#">Быстрый просмотр</a>
             </section>
           </li>
 
@@ -279,9 +294,10 @@
             <section class="good">
               <a class="good-link" href="#">
                 <img class="good-image" src="img/creamy-with-mint.jpg" width="267" height="267" alt="Сливочное с мятным сиропом">
-                <p class="cost">325₽<span class="mass">/кг</span></p>
+                <p class="cost">420₽<span class="mass">/кг</span></p>
                 <h3 class="good-title">Сливочное с мятным сиропом</h3>
               </a>
+              <a class="button fast-view-button" href="#">Быстрый просмотр</a>
             </section>
           </li>
         </ul>
