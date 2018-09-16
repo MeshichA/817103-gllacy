@@ -24,6 +24,7 @@ body {
   cursor: pointer;
 }
 
+
 .main-header {
   position: relative;
   width: 1146px;
@@ -618,12 +619,15 @@ body {
 }
 
 
-
-.container {
+.main-wrapper {
   width: 1146px;
   margin: 0 auto;
   position: relative;
   padding: 0 27px;
+}
+
+.container {
+  position: relative;
 }
 
 .site-wrapper {
@@ -1364,10 +1368,10 @@ body {
 
 .main-footer {
   margin-top: 20px;
-  margin-bottom: 25px;
+  padding-bottom: 25px;
 }
 
-.main-footer .container{
+.main-footer-wrapper{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1375,6 +1379,10 @@ body {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding-top: 20px;
+  width: 1146px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 27px;
 }
 
 .footer-social {
