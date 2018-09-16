@@ -1,10 +1,10 @@
 body {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
-  width: 1200px;
+  background-color: #849d8f;
   font-family: "Roboto", "Arial", sans-serif;
   color: #ffffff;
-  background-color: #849d8f;
+
 }
 
 .button {
@@ -28,6 +28,7 @@ body {
   position: relative;
   width: 1146px;
   margin: 0 auto;
+  padding: 0 27px;
   margin-bottom: 335px;
   font-size: 16px;
   line-height: 18px;
@@ -38,13 +39,14 @@ body {
   display: block;
   position:absolute;
   top: 9px;
-  left: 0;
+  left: 27px;
 }
 
 .main-header-catalog {
   position: relative;
   width: 1146px;
   margin: 0 auto;
+  padding: 0 27px;
   margin-bottom: 40px;
   font-size: 16px;
   line-height: 18px;
@@ -220,7 +222,7 @@ body {
   line-height: 16px;
   font-weight: 500;
   color: #ffffff;
-  background-color: #9db1a5;
+  background-color: rgba(255, 255, 255, 0.2);
   border-radius: 20px;
   text-decoration: none;
   padding-left: 43px;
@@ -231,7 +233,7 @@ body {
 
 .search-link {
   display: block;
-  background-color: #a1b4a9;
+  background-color: rgba(255, 255, 255, 0.2);
   border-radius: 20px;
   width: 30px;
   height: 30px;
@@ -371,15 +373,15 @@ body {
   font-size: 14px;
   font-weight: 500;
   line-height: 16px;
-  background-color: #a1b4a9;
   border-radius: 20px;
   text-decoration: none;
   color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .login-link:hover,
 .login-link:focus {
-  background-color: #f8f7f4;
+  background-color: #f7f6f3;
   color: #323232;
 }
 
@@ -589,7 +591,7 @@ body {
 .information {
   position: absolute;
   top: 73px;
-  right: 0;
+  right: 27px;
 }
 
 .contact-time {
@@ -615,16 +617,13 @@ body {
   font-weight: 700;
 }
 
-.main-wrapper {
-  width: 1146px;
-  margin: 0 auto;
-  position: relative;
-}
+
 
 .container {
   width: 1146px;
   margin: 0 auto;
   position: relative;
+  padding: 0 27px;
 }
 
 .site-wrapper {
@@ -731,7 +730,7 @@ body {
 
 .slider-controls label:hover,
 .slider-controls label:focus {
-  background-color: #b2c1b7;
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 .slider-controls label:active {
@@ -1353,14 +1352,14 @@ body {
   justify-content: flex-end;
   position: absolute;
 	bottom: -370px;
-  left: 840px;
+  left: 838px;
   background-image: url(../img/background-map.png);
   background-repeat: no-repeat;
   z-index: 100;
 }
 
 .contacts-wrapper {
-  padding: 30px 25px;
+  padding: 40px 25px;
 }
 
 .main-footer {
@@ -1457,7 +1456,7 @@ body {
   color: #ffffff;
   text-decoration: none;
   font-weight: 400;
-  border-bottom: 1px solid #9db1a5;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 .footer-info-item-bold a {
@@ -1466,7 +1465,7 @@ body {
 
 .link-academy {
   text-decoration: none;
-  border-bottom: 1px solid #9db1a5;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 .footer-info-item-bold a:hover,
