@@ -780,7 +780,7 @@ body {
 }
 
 .promo-raspberry {
-  width: 525px;
+  width: 522px;
   background-image: url(../img/background-strawberrypng.png);
   padding: 16px 19px;
   background-repeat: no-repeat;
@@ -790,7 +790,7 @@ body {
 }
 
 .promo-chocolate {
-  width: 520px;
+  width: 522px;
   background-image: url(../img/background-chocolat.png);
   padding: 16px 20px;
   background-repeat: no-repeat;
@@ -884,7 +884,7 @@ body {
   position: relative;
   z-index: 5;
   border-radius: 20px;
-  width: 258px;
+  width: 267px;
 }
 
 .popular-goods {
@@ -1342,8 +1342,8 @@ body {
   list-style: none;
   padding: 0;
   margin: 0;
-  margin-bottom: 20px;
-  margin-top: 20px
+  margin-bottom: 17px;
+  margin-top: 14px
 }
 
 .number {
@@ -1351,7 +1351,6 @@ body {
   padding: 0;
   margin: 0;
   margin-bottom: 20px;
-  margin-top: 20px
 }
 
 .address li:nth-child(1) {
@@ -1402,7 +1401,7 @@ body {
   color: #ffffff;
   text-decoration: none;
   margin-left: auto;
-  margin-bottom: 10px;
+  margin-bottom: 19px;
   border-radius: 30px;
   padding: 10px 25px;
 }
@@ -1411,10 +1410,23 @@ body {
   position: relative;
 }
 
+.modal-map::before {
+  content: "";
+  position: absolute;
+  top: 137px;
+  left: 238px;
+  width: 80px;
+  height: 140px;
+  background-image: url(../img/pin.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  z-index: 150;
+}
+
 .contacts {
   width: 302px;
   position: absolute;
-	bottom: -367px;
+	bottom: -369px;
   left: 843px;
   background-image: url(../img/background-map.png);
   background-repeat: no-repeat;
@@ -1424,7 +1436,6 @@ body {
 .contacts-wrapper {
   box-sizing: border-box;
   width: 302px;
-  padding: 15px 25px;
   font-size: 14px;
   line-height: 20px;
   color: #323232;
