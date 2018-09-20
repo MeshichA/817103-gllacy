@@ -1510,28 +1510,28 @@ body {
 }
 
 .footer-social .icon-twit {
-  background: url(../img/twitter.svg);
+  background-image: url(../img/twitter.svg);
   background-repeat: no-repeat;
   background-clip: padding-box;
   opacity: 0.8;
 }
 
 .footer-social .icon-inst {
-  background: url(../img/instagram.svg);
+  background-image: url(../img/instagram.svg);
   background-repeat: no-repeat;
   background-clip: padding-box;
   opacity: 0.8;
 }
 
 .footer-social .icon-fb {
-  background: url(../img/fb.svg);
+  background-image: url(../img/fb.svg);
   background-repeat: no-repeat;
   background-clip: padding-box;
   opacity: 0.8;
 }
 
 .footer-social .icon-vk {
-  background: url(../img/vk.svg);
+  background-image: url(../img/vk.svg);
   background-repeat: no-repeat;
   background-clip: padding-box;
   opacity: 0.8;
@@ -1833,7 +1833,7 @@ body {
   justify-content: space-between;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  max-width: 871px;
+  max-width: 858px;
   margin-bottom: 24px;
 }
 
@@ -2005,7 +2005,7 @@ body {
 .fatness-filter {
   margin: 0;
   padding-top: 8px;
-  padding-left: 18px;
+  padding-left: 16px;
   padding-right: 17px;
   background: #aabab0;
   border-radius: 20px;
@@ -2018,7 +2018,7 @@ body {
 .fatness-filter label {
   display: inline-block;
   position: relative;
-  margin-right: 21px;
+  margin-right: 17px;
   margin-bottom: 10px;
   padding-left: 29px;
   font-size: 16px;
@@ -2031,8 +2031,8 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 12px;
-  height: 12px;
+  width: 10px;
+  height: 10px;
   border: 3px solid #aabab0;
   border-radius: 50%;
   -webkit-box-shadow: 0 0 0 3px #ffffff;
@@ -2074,7 +2074,7 @@ body {
 
 .fillers-filter-wrapper {
   padding: 0;
-  margin-right: 4px;
+  margin-right: 14px;
   margin-bottom: 14px;
   border:0 none;
 }
@@ -2162,8 +2162,8 @@ body {
   margin-bottom: 16px;
   padding-top: 4px;
   padding-bottom: 6px;
-  padding-left: 26px;
-  padding-right: 26px;
+  padding-left: 27px;
+  padding-right: 27px;
   border: 2px solid #ffffff;
   -webkit-box-shadow: none;
   box-shadow: none;
